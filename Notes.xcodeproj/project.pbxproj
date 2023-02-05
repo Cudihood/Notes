@@ -12,6 +12,9 @@
 		8F48C77529901D3900C31BE3 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C77429901D3900C31BE3 /* CustomTableViewCell.swift */; };
 		8F48C77A29901EB300C31BE3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F48C77C29901EB300C31BE3 /* Localizable.strings */; };
 		8F48C78029901F0F00C31BE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F48C77E29901F0F00C31BE3 /* InfoPlist.strings */; };
+		8F48C7832990209000C31BE3 /* NSAttributedString+htmlData.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C7822990209000C31BE3 /* NSAttributedString+htmlData.swift.swift */; };
+		8F48C785299020B300C31BE3 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C784299020B300C31BE3 /* StorageManager.swift */; };
+		8F48C787299020CD00C31BE3 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C786299020CD00C31BE3 /* NoteModel.swift */; };
 		8F9A33FD2990195500869DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A33FC2990195500869DA4 /* AppDelegate.swift */; };
 		8F9A33FF2990195500869DA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A33FE2990195500869DA4 /* SceneDelegate.swift */; };
 		8F9A34042990195500869DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9A34022990195500869DA4 /* Main.storyboard */; };
@@ -31,6 +34,9 @@
 		8F48C77D29901EB700C31BE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8F48C77F29901F0F00C31BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8F48C78129901F2500C31BE3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8F48C7822990209000C31BE3 /* NSAttributedString+htmlData.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+htmlData.swift.swift"; sourceTree = "<group>"; };
+		8F48C784299020B300C31BE3 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		8F48C786299020CD00C31BE3 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 		8F9A33F92990195500869DA4 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9A33FC2990195500869DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F9A33FE2990195500869DA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,10 +101,13 @@
 				8F9A33FC2990195500869DA4 /* AppDelegate.swift */,
 				8F9A33FE2990195500869DA4 /* SceneDelegate.swift */,
 				8F9A341229901B3C00869DA4 /* NewNoteViewController.swift */,
-				8F48C77E29901F0F00C31BE3 /* InfoPlist.strings */,
-				8F48C77C29901EB300C31BE3 /* Localizable.strings */,
+				8F48C784299020B300C31BE3 /* StorageManager.swift */,
+				8F48C786299020CD00C31BE3 /* NoteModel.swift */,
+				8F48C7822990209000C31BE3 /* NSAttributedString+htmlData.swift.swift */,
 				8F48C77229901C0F00C31BE3 /* MainViewController.swift */,
 				8F48C77429901D3900C31BE3 /* CustomTableViewCell.swift */,
+				8F48C77E29901F0F00C31BE3 /* InfoPlist.strings */,
+				8F48C77C29901EB300C31BE3 /* Localizable.strings */,
 				8F9A34022990195500869DA4 /* Main.storyboard */,
 				8F9A34052990195700869DA4 /* Assets.xcassets */,
 				8F9A34072990195700869DA4 /* LaunchScreen.storyboard */,
@@ -226,7 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F9A341329901B3C00869DA4 /* NewNoteViewController.swift in Sources */,
+				8F48C787299020CD00C31BE3 /* NoteModel.swift in Sources */,
+				8F48C7832990209000C31BE3 /* NSAttributedString+htmlData.swift.swift in Sources */,
 				8F48C77529901D3900C31BE3 /* CustomTableViewCell.swift in Sources */,
+				8F48C785299020B300C31BE3 /* StorageManager.swift in Sources */,
 				8F9A33FD2990195500869DA4 /* AppDelegate.swift in Sources */,
 				8F9A33FF2990195500869DA4 /* SceneDelegate.swift in Sources */,
 				8F48C77329901C0F00C31BE3 /* MainViewController.swift in Sources */,

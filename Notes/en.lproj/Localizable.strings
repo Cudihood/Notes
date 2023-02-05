@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Notes
+
+  Created by Даниил Циркунов on 06.02.2023.
+  
+*/
+"TitleNote" = "First note";
+"TextNote" = "There will be a text of your note";
+"Bold" = "Bold";
+"Italic" = "Italic";
+"Underline" = "Underline";
+"Standart" = "Standart";
+"Increase" = "Increase";
+"Reduce" = "Reduce";
