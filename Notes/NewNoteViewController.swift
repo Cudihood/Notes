@@ -9,6 +9,10 @@ import UIKit
 
 class NewNoteViewController: UIViewController {
 
+    @IBOutlet weak var titleNote: UITextField!
+    @IBOutlet weak var textNote: UITextView!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

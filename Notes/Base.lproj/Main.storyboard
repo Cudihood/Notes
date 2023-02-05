@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v6f-Do-Bf2">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -8,17 +8,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Note-->
+        <!--Notes-->
         <scene sceneID="CSz-LR-oh2">
             <objects>
-                <tableViewController id="IPL-m8-EKh" customClass="MainViewController" customModule="NotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="IPL-m8-EKh" customClass="MainViewController" customModule="Notes" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="P28-J2-L8s">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" id="0V2-gz-2OF" customClass="CustomTableViewCell" customModule="NotesApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" id="0V2-gz-2OF" customClass="CustomTableViewCell" customModule="Notes" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0V2-gz-2OF" id="825-Pd-0Oc">
@@ -63,7 +63,7 @@
                             <outlet property="delegate" destination="IPL-m8-EKh" id="xVF-Eq-y3e"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Note" id="12E-gG-z5Z">
+                    <navigationItem key="navigationItem" title="Notes" id="12E-gG-z5Z">
                         <barButtonItem key="backBarButtonItem" title="All notes" id="dpW-4P-Pzs"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="211-tP-R9r">
                             <connections>
@@ -79,7 +79,7 @@
         <!--New Note View Controller-->
         <scene sceneID="wik-2e-74g">
             <objects>
-                <viewController id="pvX-cJ-Bx9" customClass="NewNoteViewController" customModule="NotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pvX-cJ-Bx9" customClass="NewNoteViewController" customModule="Notes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z8I-R8-OXG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -1,0 +1,15 @@
+
+/* Class = "UINavigationItem"; title = "Note"; ObjectID = "12E-gG-z5Z"; */
+"12E-gG-z5Z.title" = "Заметки";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "5x2-XP-YhX"; */
+"5x2-XP-YhX.placeholder" = "Название";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "bX0-NZ-pjX"; */
+"bX0-NZ-pjX.text" = "Заголовок";
+
+/* Class = "UIBarButtonItem"; title = "All notes"; ObjectID = "dpW-4P-Pzs"; */
+"dpW-4P-Pzs.title" = "Все заметки";
+
+/* Class = "UILabel"; text = "Text"; ObjectID = "fz0-mN-Smm"; */
+"fz0-mN-Smm.text" = "Текст";
