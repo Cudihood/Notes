@@ -7,11 +7,11 @@
 
 import UIKit
 
-class NewNoteViewController: UIViewController {
+final class NewNoteViewController: UIViewController {
 
     var currentNote: Note?
-    var menuEdit, menuEditSize: UIMenu?
-    var fontSize: CGFloat = 19
+    private var menuEdit, menuEditSize: UIMenu?
+    private var fontSize: CGFloat = 19
     
     @IBOutlet weak var titleNote: UITextField!
     @IBOutlet weak var textNote: UITextView!
@@ -190,10 +190,6 @@ extension NewNoteViewController: UITextViewDelegate{
         checkKeyboard()
     }
     
-    func textViewDidEndEditing(_ textView: UITextView) {
-        tapDone()
-    }
-    
     func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
         addInputAccessoryView()
         return true
@@ -205,7 +201,7 @@ extension NewNoteViewController: UITextViewDelegate{
         center.addObserver(self, selector: #selector(keyboardWillBeHidden(note:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-    @objc func keyboardWillBeShown(note: Notification) {
+    @objc private func keyboardWillBeShown(note: Notification) {
         let userInfo = note.userInfo
         let keyboardFrame = userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
         let contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: keyboardFrame.height, right: 0.0)
@@ -215,13 +211,13 @@ extension NewNoteViewController: UITextViewDelegate{
         
     }
     
-    @objc func keyboardWillBeHidden(note: Notification) {
+    @objc private func keyboardWillBeHidden(note: Notification) {
      let contentInset = UIEdgeInsets.zero
      textNote.contentInset = contentInset
      textNote.scrollIndicatorInsets = contentInset
     }
 
-    func addInputAccessoryView(){
+    private func addInputAccessoryView(){
         let toolBar = UIToolbar(frame: CGRect(x: 0.0,
                                               y: 0.0,
                                               width: UIScreen.main.bounds.size.width,
@@ -242,7 +238,7 @@ extension NewNoteViewController: UITextViewDelegate{
         textNote.inputAccessoryView = toolBar
     }
     
-    @objc func tapDone() {
+    @objc private func tapDone() {
         self.view.endEditing(true)
     }
 }

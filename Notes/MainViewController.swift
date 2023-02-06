@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
-class MainViewController: UITableViewController {
+final class MainViewController: UITableViewController {
 
     var notes: Results<Note>!
     

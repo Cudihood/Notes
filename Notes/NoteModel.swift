@@ -7,7 +7,7 @@
 
 import RealmSwift
 
-class Note: Object {
+final class Note: Object {
     
     @objc dynamic var titleNote = ""
     @objc dynamic var textNote: Data?
